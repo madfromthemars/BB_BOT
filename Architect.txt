@@ -1,0 +1,26 @@
+FILE SYSTEM
+
+    BarberBot
+    |
+    |___app
+    |   |___handlers
+    |   |   |
+    |   |   |___basic
+    |   |   |   |
+    |   |   |   |___ basic.py (Starting Handlers)
+    |   |   |   |___ basic_keyboard.py (Keyboards for basic.py)
+    |   |   |
+    |   |   |___register
+    |   |       |
+    |   |       |___ reg.py (Register state Handlers)
+    |   |
+    |   |___ config_reader.py
+    |
+    |___config
+    |   |
+    |   |___ bot.ini
+    |
+    |___venv
+    |___ Architect.txt
+    |___ HowBotWorks.txt
+    |___ main.py

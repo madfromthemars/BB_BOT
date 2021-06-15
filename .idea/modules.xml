@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/BarberBot.iml" filepath="$PROJECT_DIR$/.idea/BarberBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CapCaL/.idea/CapCaL.iml" filepath="$PROJECT_DIR$/../CapCaL/.idea/CapCaL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SB_AIOGRAM/.idea/SB_AIOGRAM.iml" filepath="$PROJECT_DIR$/../SB_AIOGRAM/.idea/SB_AIOGRAM.iml" />
+    </modules>
+  </component>
+</project>
