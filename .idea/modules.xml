@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/BarberBot.iml" filepath="$PROJECT_DIR$/.idea/BarberBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../BarberBotAdmin/.idea/BarberBotAdmin.iml" filepath="$PROJECT_DIR$/../BarberBotAdmin/.idea/BarberBotAdmin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../CapCaL/.idea/CapCaL.iml" filepath="$PROJECT_DIR$/../CapCaL/.idea/CapCaL.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../SB_AIOGRAM/.idea/SB_AIOGRAM.iml" filepath="$PROJECT_DIR$/../SB_AIOGRAM/.idea/SB_AIOGRAM.iml" />
     </modules>
   </component>
 </project>

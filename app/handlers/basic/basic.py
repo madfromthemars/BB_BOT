@@ -11,8 +11,9 @@ from .basic_keyboard import close, StartMenuKeyboard
 
 
 # State Groups
-from ..register.reg import startRegistering
+from ..register.reg import RegisterUserState, StartKeyboard
 from ..MainMenu.main_menu import detectOption
+from database.database import getUserByTgID
 
 """
     INSTRUCTION
@@ -34,9 +35,6 @@ from ..MainMenu.main_menu import detectOption
         |-registers funcs to Dispatcher
 """
 
-fake_db = []
-# 431510980
-
 
 # Start Command
 async def start(poMessage: types.Message, poState: FSMContext = None):
@@ -44,14 +42,16 @@ async def start(poMessage: types.Message, poState: FSMContext = None):
     if poState is not None:
         await poState.finish()
         await poMessage.answer('Do you wanna Bron', reply_markup=StartMenuKeyboard)
+        await detectOption(poMessage, poState)
 
-    if poMessage.chat.id in fake_db:
-        # TODO for registered users
+    if getUserByTgID(poMessage.from_user.id) is not None:
         await poMessage.answer('Do you wanna Bron', reply_markup=StartMenuKeyboard)
+        await detectOption(poMessage, poState)
 
     else:
-        # TODO start register state
-        await startRegistering(poMessage, poState)
+        await poMessage.answer("Hi I'm B.B.Bot to keep going")
+        await poMessage.answer('Firstly I need your Contact Info', reply_markup=StartKeyboard)
+        await RegisterUserState.getContact.set()
 
 
 # Cancel Command

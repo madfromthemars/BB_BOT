@@ -18,7 +18,7 @@ class MainMenuState(StatesGroup):
     detect = State()
 
 
-async def detectOption(poMessage: types.Message, poState: FSMContext):
+async def detectOption(poMessage: types.Message, poState: FSMContext = None):
     vsText = poMessage.text
     if vsText not in gvaText:
         await poMessage.answer('Please Choose from Options Below 😄')

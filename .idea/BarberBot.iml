@@ -6,7 +6,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="SB_AIOGRAM" />
     <orderEntry type="module" module-name="CapCaL" />
+    <orderEntry type="module" module-name="BarberBotAdmin" />
+  </component>
+  <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="requirements.txt\" />
   </component>
 </module>
